@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Conference ticket generator</title>
+</head>
+<body>
+  
+  <div class="parent-img">
+    <div id="main-img"></div>
+    <img id="second-layer" src="./assets/images/pattern-lines.svg">
+    <img id="circle-layer" src="./assets/images/pattern-circle.svg">
+    <div id="squiggly-1"></div>
+    <img id="squiggly-2" src="./assets/images/pattern-squiggly-line-top.svg">
+    <img id="full-logo" src="./assets/images/logo-full.svg">
+  </div>
+  <main>
+    <form>
+  <!-- Form starts -->
+      <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <h2>Secure your spot at next year's biggest coding conference.</h2>
+      <div class="upload-section">
+        <div><label>Upload Avatar</label></div>
+        <div></div>
+        <div id="drag-and-drop-area">
+         <div>Drag and drop or click to upload your photo (JPG or PNG, max size: 500KB).</div>
+         <img src="./assets/images/icon-upload.svg">
+        </div>
+        <div id="showable"></div>
+      </div>
+      <input id="hidden-input-file" name="photo" type="file" visibility: hidden ><span id="photo-empty-filed-pop"></span>
+      <div><label>Full Name</label> <div class="mandatory-filed-container"><input name="fullName" type="text" placeholder="full name"><span id="m-be-pop-fullname"></span></div></div>
+      <div><label>Address example@email.com</label><div class="mandatory-filed-container"><input name="email" type="email" placeholder="email"><span id="m-be-pop-email"></span></div></div>
+      <div id="git-hub"><label><span><img src="./assets/images/icon-github.svg"></span>GitHub Username</label><div class="mandatory-filed-container"> <input name="github" type="text" placeholder="github username"><span id="m-be-pop-git"></span></div></div>
+      <div><label>@yourusername</label><div class="mandatory-filed-container"> <input name="username" type="text" placeholder="username"><span id="m-be-pop-username"></span></div></div>
+      <button type="submit"> Generate My Ticket </button>
+  <!-- Form ends -->
+    </form>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Tamir Nachmias</a>.
+  </footer>
+</body>
+</html>
+
+<script defer src="./script.js"></script>
+<script defer src="./submit.js"></script>
