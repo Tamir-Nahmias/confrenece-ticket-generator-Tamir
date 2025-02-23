@@ -25,7 +25,7 @@ app.post('/api/send-to-server', (req, res) => {
    //res.redirect(`/generate-ticket.html?fullName=${formData.fullName}`)
    res.json({
     success: true,
-    redirectUrl: `http://localhost:3000/generate-ticket.html`,  // URL to redirect to
+    redirectUrl: `/generate-ticket.html`,  // URL to redirect to
     data: req.body  // Include the form data if needed
 });
 
